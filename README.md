@@ -43,3 +43,10 @@ v.21 buggfix
 v.22 slutinlämning projekt / Post mortem
 v.23 Presentation och redovisning
 
+Planering:
+
+Jag tänker göra ett ritprogram. Tanken just nu är att möjligen ha olika penslar och ett sudd.
+Kanske också en funktion där jag kan använda klister märken som är bilder från google.
+
+
+
