@@ -48,5 +48,6 @@ Planering:
 Jag tänker göra ett ritprogram. Tanken just nu är att möjligen ha olika penslar och ett sudd.
 Kanske också en funktion där jag kan använda klister märken som är bilder från google.
 
+För att rita så kommer man hålla in vänster musknapp medans man drar med musen för att rita. 
 
 
