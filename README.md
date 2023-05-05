@@ -50,4 +50,5 @@ Kanske också en funktion där jag kan använda klister märken som är bilder f
 
 För att rita så kommer man hålla in vänster musknapp medans man drar med musen för att rita. 
 
+Första två lektionerna har gått till att skapa ett canvas och listeners och påbörjat delen där jag kan börja rita.
 
