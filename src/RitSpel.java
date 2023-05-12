@@ -17,6 +17,9 @@ public class RitSpel extends Canvas implements Runnable{
     public RitSpel() {
         setSize(600, 400);
         image = new BufferedImage(600,400,BufferedImage.TYPE_INT_ARGB);
+        Graphics g = image.getGraphics();
+        g.setColor(new Color(0x0000ff));
+        g.drawRect(0,380,50,400);
         JFrame frame = new JFrame();
         frame.add(this);
         this.addMouseMotionListener(new MyMouseMotionListener());
@@ -50,6 +53,9 @@ public class RitSpel extends Canvas implements Runnable{
         public void mouseClicked(MouseEvent e) {
             int mouseX = e.getX();
             int mouseY = e.getY();
+            if (mouseY<380){
+                DrawRect.(600,400);
+            }
             Graphics g = image.getGraphics();
             g.setColor(new Color(0xFF0000));
             g.fillOval(mouseX, mouseY,10,10);
