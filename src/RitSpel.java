@@ -45,9 +45,11 @@ public class RitSpel extends Canvas implements Runnable{
         public void mouseDragged(MouseEvent e) {
             int mouseX = e.getX();
             int mouseY = e.getY();
-            Graphics g = image.getGraphics();
-            g.setColor(new Color(0xFF0000));
-            g.fillOval(mouseX, mouseY,10,10);
+            if (mouseX > 100) {
+                Graphics g = image.getGraphics();
+                g.setColor(new Color(0xFF0000));
+                g.fillOval(mouseX, mouseY, 10, 10);
+            }
         }
     }
 
@@ -59,7 +61,9 @@ public class RitSpel extends Canvas implements Runnable{
             if (mouseY>370 && mouseX<100){
                 Graphics g = image.getGraphics();
                 g.setColor(new Color(0xffffff));
-                g.fillRect(0, 0,600,400);
+                g.fillRect(100, 0,500,400);
+            } else if (mouseX < 100) {
+
             }
             else {
                 Graphics g = image.getGraphics();
