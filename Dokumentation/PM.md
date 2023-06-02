@@ -1,18 +1,19 @@
 # Titel
 
-Författare och datum.
+Noel Johansson 2023-06-02
 
 ## Inledning
+Jag har jobbat med att skapa ett ritprogram i Java. Listeners och if-satser är något jag använt mig mycket av. 
 
 Här beskriver du kortfattat arbetets syfte/mål, arbetssätt, genomförande.
 
 ## Bakgrund
 
-Redovisa arbetets olika delar. Så att läsaren förstår vad du gjort och hur.
+Listeners har jag använt mig av så programmet ska veta vart och när den ska börja rita. 
+If-satserna har jag använt så programmet kan byta vilka funktioner musen har varierat på vars på skärmen musen är och vilken knapp på musen man trycker.
+Ytan som jag ritar på är ett canvas som jag skapat. 
+Det finns en funktion som fungerar som en reset knapp så om man trycker på den så försvinner allt man ritat men vad den egentligen gör är att rita en rektangel som är samma färg som bakgrunden som täcker för det man ritat.
 
-Använd gärna bilder för att illustrera.
-
-För att lägga till bilder i markdown. Bilderna kan du ladda upp med Git som vanligt, länka dem med url eller filnamnet.
 
 ```
 ![GitHub Logo](/images/logo.png)
@@ -23,13 +24,17 @@ Format: ![Alt Text](url)
 
 ## Positiva erfarenheter
 
-Här beskriver du vad som har gått bra i ditt projekt och analyserar varför. Hur ska du upprepa framgångarna.
+Det gick bra att skapa listeners och if-satser. När jag väl hade programmerat en del var det enkelt att fortsätta.
 
 ## Negativa erfarenheter
 
-Här beskriver du det som du anser har gått mindre bra med ditt projekt och analyserar hur du kan undvika detta i framtida projekt.
+Det var som svårast i början för jag visste inte riktigt vars jag skulle börja. 
+Det var lite svårt att veta vad jag skulle göra för att programmet skulle veta vars min mus var.
+
 
 ## Sammanfattning
 
-Här redovisar du dina slutsatser, erfarenheter och lärdomar. Reflektera över din produkt och dess/dina utvecklingsmöjligheter.
-Vad kan vidareutvecklas och finns det utrymme att bygga vidare på projektet.
+Detta var ett väldigt lärorikt moment där jag fick lära mig nya lärodomar men även repetera viktiga moment. 
+En vidareutveckling av detta program skulle kunna ha fler färger och olika storlekar på det man ritar med.
+
+

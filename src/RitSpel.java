@@ -14,11 +14,14 @@ public class RitSpel extends Canvas implements Runnable{
     private Thread thread;
 
     private BufferedImage image;
+
+    private int button = 0;
     public RitSpel() {
         setSize(600, 400);
         image = new BufferedImage(600,400,BufferedImage.TYPE_INT_ARGB);
         Graphics g = image.getGraphics();
         g.setColor(new Color(0x0000ff));
+        g.drawString("Reset",5 ,395);
         g.drawRect(0,380,100,19);
         g.drawRect(0,361,100,19);
         g.drawRect(0,342,100,19);
@@ -45,9 +48,19 @@ public class RitSpel extends Canvas implements Runnable{
         public void mouseDragged(MouseEvent e) {
             int mouseX = e.getX();
             int mouseY = e.getY();
+
             if (mouseX > 100) {
                 Graphics g = image.getGraphics();
-                g.setColor(new Color(0xFF0000));
+
+            }
+            if (button == 1){
+                Graphics g = image.getGraphics();
+                g.setColor(Color.blue);
+                g.fillOval(mouseX, mouseY, 10, 10);
+            }
+            else if (button == 2){
+                Graphics g = image.getGraphics();
+                g.setColor(Color.red);
                 g.fillOval(mouseX, mouseY, 10, 10);
             }
         }
@@ -60,8 +73,8 @@ public class RitSpel extends Canvas implements Runnable{
             int mouseY = e.getY();
             if (mouseY>370 && mouseX<100){
                 Graphics g = image.getGraphics();
-                g.setColor(new Color(0xffffff));
-                g.fillRect(100, 0,500,400);
+                g.setColor(new Color(0xECECEC));
+                g.fillRect(101, 0,500,400);
             } else if (mouseX < 100) {
 
             }
@@ -74,12 +87,13 @@ public class RitSpel extends Canvas implements Runnable{
 
         @Override
         public void mousePressed(MouseEvent e) {
-
+            button = e.getButton();
+            System.out.println("Mousebutton " + button);
         }
 
         @Override
         public void mouseReleased(MouseEvent e) {
-
+            button = 0;
         }
 
         @Override
